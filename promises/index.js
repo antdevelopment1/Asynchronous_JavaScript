@@ -36,6 +36,10 @@ function readFile(filename, encoding) {
   return promise;
 }
 
+readFile("./indexksks.js", "utf-8").then(
+  (sucess) => console.log("File Read", sucess),
+  (failure) => console.log("Failed to Read", failure)
+);
 readFile("./index.js", "utf-8").then(
   (sucess) => console.log("File Read", sucess),
   (failure) => console.log("Failed to Read", failure)
